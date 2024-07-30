@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
     <link rel="stylesheet" href="CSS\scheme.css">
+    <link rel="javascript" href="SideNav.js">
     <link rel="stylesheet" href="CSS\nav.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
@@ -14,16 +15,15 @@
 
   
   <body>
-    <nav id="SideNav" class="NavClass">
-        <a href="javascript:void(0)" class="closeNav" onclick="closeNav()">&times;</a>
-        <ul style="list-style-type: circle;"> 
-            <li>Home</li>
-            <li>Experience</li>
-            <li>About Me</li>
-        </ul>
-    </nav>
-    
-      <span onclick="openNav()">open</span>
+    <div id="mydiv" >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <br/>
+    <button onclick="toggle(this)"Hide div</button>
     <main>
         <h1>Hello World</h1>  
     </main>
