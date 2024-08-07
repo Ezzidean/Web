@@ -15,18 +15,19 @@
 
   
   <body>
-    <div id="mydiv" >
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
     </div>
-    <br/>
-    <button onclick="toggle(this)"Hide div</button>
-    <main>
-        <h1>Hello World</h1>  
-    </main>
-	<script src="index.js"></script>
+    <div id="main">
+      <button class="openbtn" onmouseover="openNav()">☰ Open Sidebar</button>  
+      <h2>Collapsed Sidebar</h2>
+      <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+      <script src="SideNav.js"></script>
+    </div>
+	
   </body>
 </html>
